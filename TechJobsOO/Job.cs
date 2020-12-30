@@ -4,7 +4,8 @@ namespace TechJobsOO
     public class Job
     {
         public int Id { get; }
-        private static int nextId = 1;
+
+        private static int nextId;
 
         public string Name { get; set; }
         public Employer EmployerName { get; set; }
@@ -12,12 +13,13 @@ namespace TechJobsOO
         public PositionType JobType { get; set; }
         public CoreCompetency JobCoreCompetency { get; set; }
 
+        
 
         // TODO: Add the two necessary constructors.
         public Job()
         {
-            Id = nextId;
-            nextId++;
+            nextId += 1;
+            Id = nextId;            
         }
 
         public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this()
