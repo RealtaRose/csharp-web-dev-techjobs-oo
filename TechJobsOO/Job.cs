@@ -63,7 +63,7 @@ namespace TechJobsOO
                 this.JobCoreCompetency.Value = "Data not available";
             }
 
-            return "\n ID:" + this.Id + "\n Name:" + this.Name + "\n Employer:" + this.EmployerName.Value + "\n Location:" + this.EmployerLocation.Value + "\n Position Type:" + this.JobType.Value + "\n Core Competency:" + this.JobCoreCompetency.Value + "\n";
+            return "\n ID: " + this.Id + "\n Name: " + this.Name + "\n Employer: " + this.EmployerName.Value + "\n Location: " + this.EmployerLocation.Value + "\n Position Type: " + this.JobType.Value + "\n Core Competency: " + this.JobCoreCompetency.Value + "\n";
         }
 
         // TODO: Generate Equals() and GetHashCode() methods.

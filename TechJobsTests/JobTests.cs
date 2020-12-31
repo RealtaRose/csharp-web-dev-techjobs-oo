@@ -56,7 +56,7 @@ namespace TechJobsTests
         {
             Job acmeTester = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency(""));
 
-            Assert.IsTrue(acmeTester.ToString() == "\n ID:" + acmeTester.Id + "\n Name:" + acmeTester.Name + "\n Employer:" + acmeTester.EmployerName.Value + "\n Location:" + acmeTester.EmployerLocation.Value + "\n Position Type:" + acmeTester.JobType.Value + "\n Core Competency:" + "Data not available" + "\n");
+            Assert.IsTrue(acmeTester.ToString() == "\n ID: " + acmeTester.Id + "\n Name: " + acmeTester.Name + "\n Employer: " + acmeTester.EmployerName.Value + "\n Location: " + acmeTester.EmployerLocation.Value + "\n Position Type: " + acmeTester.JobType.Value + "\n Core Competency: " + "Data not available" + "\n");
         }
 
         [TestMethod]
